@@ -41,7 +41,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <http://unlicense.org/>*/
 "use strict";
 
-const downloadUriTemplate="https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=$VER&x=id%3D$ID%26installsource%3Dondemand%26uc";
+const downloadUriTemplate="https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=$VER$&x=id%3D$ID$%26installsource%3Dondemand%26uc";
 function getBrowserVersion() {
     return window.navigator.userAgent.match(/Chrome\/([0-9.]+)/)[1];
 }
